@@ -1,0 +1,18 @@
+ssh-keygen -t rsa -C "felleslab@gmail.com"		""Create a public key in the .ssh repository""
+cp ~/Desktop/id_rsa ~/.ssh				""Import the id_rsa on your Desktop amd overwrite in the existing file""		
+ssh-add ~/.ssh/id_rsa					""Add the path to your ssh key in order for git to find it""
+ssh -vT git@github.com					""Command connecting git""
+git add *						""After modifying your files, add them all to git""
+git commit -m "whatever you want"			""Make a comment on what you did""
+git push -u origin master				""Share it on the global server""
+
+""If you want to read an file containing an ssh key, you can use the command gedit""
+
+
+git remote add origin git@github.com:Emancipation/Distillation-column.git
+
+ssh-keygen -t rsa -C "sebastr@stud.ntnu.no"
+xclip -sel clip <~/.ssh/id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7vNyZaU+iZ10lvcIn8vzS01BW983+dKtTHmyfS3tNsqMqGgzRbBJW3r9GcONfimUJ7Q97uYnhA8hxmMKMLd4neE3YYBE/96NHopszdvcvw9EU/LfInhuJNLGMBB+qub1k2xiPHK/NC+HkY9iwZW1VZrqHI7psiB5Zv8PcESc6Rkl6sfHRPRmBdmu04sXdfuiwGe+bn87clVK9gTlSC2+jY8C9TRG2n72WYUzYjq94f+8DTcmUPyXkpCe3KDDPpWeIHPgf/79TJGMQzz1BZJKQOu2Q5I3QjCPCyt8nkD/GXtITFeE+3FiY8RRgh348ODBAERJ9sBsHZngqLgTE/J3n felleslab@felleslab-OptiPlex-SX270
+
